@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game.Controllers.MenuController">
+    <children>
+        <AnchorPane layoutX="17.0" layoutY="8.0" prefHeight="685.0" prefWidth="961.0" style="-fx-background-color: #000000; -fx-border-color: #808080; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="48.0" layoutY="65.0" text="Публикация новой игры" textFill="#ff6200">
+               <font>
+                  <Font name="Monospaced Regular" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Name_field" layoutX="48.0" layoutY="99.0" prefHeight="40.0" prefWidth="426.0" promptText="Название" style="-fx-background-color: fafafa; -fx-border-radius: 5;">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <TextField fx:id="Make_field" layoutX="48.0" layoutY="146.0" prefHeight="40.0" prefWidth="426.0" promptText="Категория" style="-fx-background-color: fafafa; -fx-border-radius: 5;">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <TextField fx:id="Price_field" layoutX="48.0" layoutY="194.0" prefHeight="40.0" prefWidth="426.0" promptText="Цена" style="-fx-background-color: fafafa; -fx-border-radius: 5;">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <Button fx:id="addButton" layoutX="48.0" layoutY="246.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" style="-fx-border-radius: 5; -fx-background-color: #ff6200;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="16.0" />
+               </font></Button>
+            <TableView fx:id="Table" layoutX="48.0" layoutY="316.0" prefHeight="297.0" prefWidth="866.0" style="-fx-border-radius: 10; -fx-background-color: fafafa;">
+              <columns>
+                <TableColumn fx:id="NameColumn" prefWidth="283.0" text="Название" />
+                <TableColumn fx:id="makeColumn" minWidth="0.0" prefWidth="323.0" text="Категория" />
+                  <TableColumn fx:id="priceColumn" minWidth="0.0" prefWidth="258.0" text="Цена" />
+              </columns>
+            </TableView>
+            <Button fx:id="exitButton" layoutX="807.0" layoutY="624.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" style="-fx-border-radius: 5; -fx-background-color: #ff6200;" text="Выйти" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Fiend_field" layoutX="517.0" layoutY="99.0" prefHeight="58.0" prefWidth="236.0" promptText="Введите название" style="-fx-background-color: fafafa; -fx-border-radius: 5;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="fiendButton" layoutX="778.0" layoutY="97.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" style="-fx-border-radius: 5; -fx-background-color: #ff6200;" text="Поиск" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" layoutX="510.0" layoutY="246.0" prefHeight="58.0" prefWidth="199.0" textFill="RED" wrapText="true" />
+            <Button fx:id="fiendButton2" layoutX="778.0" layoutY="148.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" style="-fx-border-radius: 5; -fx-background-color: #ff6200;" text="Част.поиск" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Monospaced Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="print" layoutX="517.0" layoutY="168.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="172.0" style="-fx-border-radius: 5; -fx-background-color: #ff6200;" text="Обнулить поиск" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="16.0" />
+               </font>
+            </Button>
+              <Label layoutX="432.0" layoutY="22.0" text="Game" textFill="#ff6200">
+                  <font>
+                      <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                  </font>
+              </Label>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
